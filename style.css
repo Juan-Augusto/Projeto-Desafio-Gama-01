@@ -13,7 +13,7 @@
     --base-color-1: hsl(var(--hue) 36% 57%);
     --base-color-second-1: hsl(var(--hue) 65% 88%);
     --base-color-alt-1: hsl(var(--hue) 57% 53%);
-    --title-color-1: hsl(var(--hue) 41% 10%);
+    --title-color-1: hsl(var(--hue) 41% 25%);
     --text-color-1: hsl(0 0% 46%);
     --text-color-light-1: hsl(0 0% 98%);
     --body-color-1: hsl(0 0% 98%);
@@ -40,12 +40,64 @@ body{
 }
 .pad{
     margin-top: 2px;
-    padding: 5px;
+}
+div{
+    padding: 0px;
+}
+div.container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+div.header{
+    margin-bottom: 100px;
 }
 div.pad{
     background: var(--body-color-1);
     box-shadow: 1px 1px 10px 1px;
 }
+div.descricao{
+    margin: 1.5rem;
+}
+div img{
+    clip-path: circle();
+}
 span{
     color: var(--base-color-1);
+}
+
+
+.products{
+    background: var(--body-color-1);
+    margin: 24px;
+    padding: 0px;
+}
+.products h2{
+    padding: 1.5rem;
+    font: 700 var(--title-font-size-1) var(--title-font-1);
+    text-align: center;
+    border-bottom: solid;
+}
+.row{
+    margin-left: 1.25rem;
+}
+.btn{
+    color: var(--body-font-1);
+    background-color: var(--base-color);
+    padding: 5px;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: var(--base-color-alt);
+    padding: 8px;
+
+}
+.card{
+    width: 18rem;
+    margin: 1rem;
+    box-shadow: 1px 1px 10px 1px hsl(var(--hue) 36% 57%);
+    transition: .3s;
+}
+.card:hover{
+    box-shadow: .2px .2px 2px .2px hsl(var(--hue) 36% 57%);
+    transform: translateY(-8px);
 }
