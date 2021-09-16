@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*====Variables=============*/
+:root{
+    --header-height: 4.5rem;
+
+    /* colors */
+    --hue: 60;
+    /* HSL color mode */
+    --base-color-1: hsl(var(--hue) 36% 57%);
+    --base-color-second-1: hsl(var(--hue) 65% 88%);
+    --base-color-alt-1: hsl(var(--hue) 57% 53%);
+    --title-color-1: hsl(var(--hue) 41% 10%);
+    --text-color-1: hsl(0 0% 46%);
+    --text-color-light-1: hsl(0 0% 98%);
+    --body-color-1: hsl(0 0% 98%);
+
+    /*fonts*/
+    --title-font-size-1: 1.875rem;
+    --subtitle-font-size-1: 1rem;
+
+    --title-font-1: 'Poppins', sans-serif;
+    --body-font-1: 'DM Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font: 400 1rem var(--body-font-1);
+    color: var(--text-color-1);
+    -webkit-font-smoothing: antialiased;
+}
+.title{
+    font: 700 var(--title-font-size-1) var(--title-font-1);
+    color: var(--title-color-1);
+    -webkit-font-smoothing: auto;
+}
+.pad{
+    margin-top: 2px;
+    padding: 5px;
+}
+div.pad{
+    background: var(--body-color-1);
+    box-shadow: 1px 1px 10px 1px;
+}
+span{
+    color: var(--base-color-1);
+}
