@@ -19,11 +19,22 @@
     --body-color-1: hsl(0 0% 98%);
 
     /*fonts*/
-    --title-font-size-1: 1.875rem;
-    --subtitle-font-size-1: 1rem;
+    --title-font-size-1: 1.25rem;
+    --subtitle-font-size-1: 2rem;
 
     --title-font-1: 'Poppins', sans-serif;
     --body-font-1: 'DM Sans', sans-serif;
+}
+h3{
+    color: var(--base-color);
+    background: var(--base-color-second);
+}
+.row{
+    background: none;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 html{
     scroll-behavior: smooth;
@@ -35,37 +46,30 @@ body{
 }
 .title{
     font: 700 var(--title-font-size-1) var(--title-font-1);
+    color: var(--base-color-alt-1);
+    -webkit-font-smoothing: auto;
+}
+nav h2{
+    font: 400 var(--title-font-size-1) var(--title-font-1);
+    -webkit-font-smoothing: auto;
+}
+
+span.inc{
+    border: solid 2px var(--title-color-1);
+    padding: 5px;
+    -webkit-font-smoothing: auto;
+}
+span.sub{
+    font: 600 var(--subtitle-font-size-1) var(--body-font-1);
+    color: var(--base-color-alt-1);
+    -webkit-font-smoothing: auto;
+
+}
+.list-group-item{
+    font: 200 var(--subtitle-font-size-1) var(--body-font-1);
     color: var(--title-color-1);
     -webkit-font-smoothing: auto;
 }
-.pad{
-    margin-top: 2px;
-}
-div{
-    padding: 0px;
-}
-div.container{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-div.header{
-    margin-bottom: 100px;
-}
-div.pad{
-    background: var(--body-color-1);
-    box-shadow: 1px 1px 10px 1px;
-}
-div.descricao{
-    margin: 1.5rem;
-}
-div img{
-    clip-path: circle();
-}
-span{
-    color: var(--base-color-1);
-}
-
-
 .products{
     background: var(--body-color-1);
     margin: 24px;
@@ -76,9 +80,6 @@ span{
     font: 700 var(--title-font-size-1) var(--title-font-1);
     text-align: center;
     border-bottom: solid;
-}
-.row{
-    margin-left: 1.25rem;
 }
 .btn{
     color: var(--body-font-1);
@@ -92,7 +93,6 @@ span{
 
 }
 .card{
-    width: 18rem;
     margin: 1rem;
     box-shadow: 1px 1px 10px 1px hsl(var(--hue) 36% 57%);
     transition: .3s;
