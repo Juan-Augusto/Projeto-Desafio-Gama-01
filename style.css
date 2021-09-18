@@ -20,8 +20,9 @@
 
     /*fonts*/
     --title-font-size-1: 1.25rem;
+    --menu-font-size-1: 1.1rem;
     --subtitle-font-size-1: 2rem;
-
+    --product-font-size-1: 3rem;
     --title-font-1: 'Poppins', sans-serif;
     --body-font-1: 'DM Sans', sans-serif;
 }
@@ -50,7 +51,7 @@ body{
     -webkit-font-smoothing: auto;
 }
 nav h2{
-    font: 400 var(--title-font-size-1) var(--title-font-1);
+    font: 400 var(--menu-font-size-1) var(--title-font-1);
     -webkit-font-smoothing: auto;
 }
 
@@ -77,9 +78,13 @@ span.sub{
 }
 .products h2{
     padding: 1.5rem;
-    font: 700 var(--title-font-size-1) var(--title-font-1);
     text-align: center;
     border-bottom: solid;
+    color: var(--base-color);
+}
+.products h2 span{
+    font: 700 var(--products-font-size-1) var(--title-font-1);
+    color: var(--title-color-1);
 }
 .btn{
     color: var(--body-font-1);
