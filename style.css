@@ -73,7 +73,7 @@ nav h2{
 
 span.inc{
     border: solid 2px var(--title-color-1);
-    padding: 5px;
+    padding: 18px 5px 5px 5px;
     -webkit-font-smoothing: auto;
 }
 span.sub{
@@ -82,6 +82,7 @@ span.sub{
     -webkit-font-smoothing: auto;
 
 }
+
 .list-group-item{
     font: 200 var(--subtitle-font-size-1) var(--body-font-1);
     color: var(--title-color-1);
@@ -122,6 +123,8 @@ span.sub{
     box-shadow: .2px .2px 2px .2px hsl(var(--hue) 36% 57%);
     transform: translateY(-8px);
 }
+
+
 /*===============FOOTER=====================*/
 footer{
     background: var(--base-color);
