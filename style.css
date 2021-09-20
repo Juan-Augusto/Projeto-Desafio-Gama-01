@@ -54,6 +54,22 @@ nav h2{
     font: 400 var(--menu-font-size-1) var(--title-font-1);
     -webkit-font-smoothing: auto;
 }
+.border-edit{
+    border: solid 1px var(--base-color-second-1);
+    box-shadow: 5px 6px 7px 1px var(--base-color-second-1);
+    transition: .3s;
+}
+.border-edit:hover{
+    box-shadow: 1px 1px 1px 1px var(--base-color-second-1);
+
+}
+.border-edit p,
+.border-edit h5{
+    color: var(--base-color-second);
+    font: 700 var(--title-font-size-1) var(--title-font-1);
+    background: var(--base-color-alt-1);
+
+}
 
 span.inc{
     border: solid 2px var(--title-color-1);
@@ -105,4 +121,79 @@ span.sub{
 .card:hover{
     box-shadow: .2px .2px 2px .2px hsl(var(--hue) 36% 57%);
     transform: translateY(-8px);
+}
+/*===============FOOTER=====================*/
+footer{
+    background: var(--base-color);
+    margin: 0;
+}
+footer.section{
+padding: 4rem 0;
+}
+footer a.logo{
+    font: 700 var(--subtitle-font-size-1) var(--title-font-1);
+    padding: 0px;
+    color: var(--text-color-1);
+    transition: .3s;    
+}
+footer a span{
+    color: var(--text-color-light-1);
+
+}
+footer a.logo:hover{
+    color: var(--base-color-second);
+    padding: 5px;
+}
+footer .logo{
+display: inline-block;
+margin-bottom: 1.5rem;
+}
+footer .brand p{
+color: var(--text-color-light);
+margin-bottom: 0.75rem;
+}
+footer i{
+font-size: 1.5rem;
+color: var(--text-color-light);
+}
+footer .social a{
+display: inline-block;
+transition: .3s;
+}
+footer .social a:hover{
+transform: translateY(-8px);
+}
+footer .social{
+grid-auto-flow: column;
+width: fit-content; 
+}
+.grid{
+display: grid;
+gap: 2rem;
+}
+   @media(min-width: 1200px){
+    footer.section{
+        padding: 3.75rem 0;
+    }
+    footer .container{
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .logo{
+        font-size: 2.25rem;
+    }
+}
+    @media(min-width: 545px){
+    footer.section{
+        padding: 3.75rem 0;
+    }
+    footer .container{
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .logo{
+        font-size: 2.25rem;
+    }
 }
