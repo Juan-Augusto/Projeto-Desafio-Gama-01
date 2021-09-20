@@ -17,7 +17,7 @@
     --text-color-1: hsl(0 0% 46%);
     --text-color-light-1: hsl(0 0% 98%);
     --body-color-1: hsl(0 0% 98%);
-
+    --products-bg-color: hsl(var(--hue) 50% 46%);
     /*fonts*/
     --title-font-size-1: 1.25rem;
     --menu-font-size-1: 1.1rem;
@@ -67,8 +67,8 @@ nav h2{
 .border-edit h5{
     color: var(--base-color-second);
     font: 700 var(--title-font-size-1) var(--title-font-1);
-    background: var(--base-color-alt-1);
-
+    background: var(--products-bg-color);
+    border-radius: 3px;
 }
 
 span.inc{
@@ -89,7 +89,7 @@ span.sub{
     -webkit-font-smoothing: auto;
 }
 .products{
-    background: var(--body-color-1);
+    background: var(--products-bg-color);
     margin: 24px;
     padding: 0px;
 }
@@ -99,9 +99,18 @@ span.sub{
     border-bottom: solid;
     color: var(--base-color);
 }
-.products h2 span{
-    font: 700 var(--products-font-size-1) var(--title-font-1);
-    color: var(--title-color-1);
+.products h2 span.products-title{
+    color: var(--title-color);
+    font: 700 var(--subtitle-font-size-1) var(--body-font-1);
+    -webkit-stroke-color: #FFF;
+    -webkit-stroke-width: 1px;
+    color: #000;
+    text-shadow: 
+        -1px -1px 0px #FFF, 
+        -1px 1px 0px #FFF,                    
+        1px -1px 0px #FFF,                  
+        1px 0px 0px #FFF;
+
 }
 .btn{
     color: var(--body-font-1);
@@ -166,6 +175,22 @@ transition: .3s;
 footer .social a:hover{
 transform: translateY(-8px);
 }
+footer .social a i.icon-instagram:hover{
+color: var(--products-bg-color);
+}
+footer .social a i.icon-facebook:hover{
+color: blue;
+}
+footer .social a i.icon-youtube:hover{
+color: red;
+}
+footer .social a i.icon-github:hover{
+color: black;
+}
+footer .social a i.icon-whatsapp:hover{
+color: green;
+}
+
 footer .social{
 grid-auto-flow: column;
 width: fit-content; 
