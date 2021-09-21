@@ -1,0 +1,13 @@
+.edit{
+    width: 500px;
+}
+#valor-total{
+    background: var(--base-color);
+    margin: 15px;
+    border-radius: 7px;
+    border: 1px solid;
+}
+#valor-total h2{
+    font: 700 var(--title-font-size-1) var(--title-font-1);
+    padding: 5px;
+}

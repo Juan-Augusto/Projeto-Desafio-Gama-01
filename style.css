@@ -173,7 +173,7 @@ display: inline-block;
 transition: .3s;
 }
 footer .social a:hover{
-transform: translateY(-8px);
+transform: translateY(-4px);
 }
 footer .social a i.icon-instagram:hover{
 color: var(--products-bg-color);
